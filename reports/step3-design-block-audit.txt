@@ -1,3 +1,4 @@
 schematic=/Users/jplocher/Dropbox/KiCad/projects/MRCS/cpNode-IOX/cpNode-IOX.kicad_sch
-linked_groups=0
+linked_groups=1
+- Power Supply: lib_id=SPCoast:Power Supply members=86
 findings=0

@@ -6,7 +6,9 @@
 	(paper "USLetter")
 	(title_block
 		(title "cpNode-IOX")
+		(date "2026.07")
 		(company "SPCoast")
+		(comment 1 "John Plocher")
 		(comment 2 "23017 IO Expander for cpNode")
 		(comment 9 "experimental")
 	)
@@ -3291,7 +3293,7 @@
 	)
 	(text "Reverse\nVoltage\nProtection\n(Max Vgs=+/-20v, no zener needed)"
 		(exclude_from_sim no)
-		(at 61.214 189.738 0)
+		(at 64.516 189.738 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3827,83 +3829,6 @@
 		(uuid "fa216c55-854c-4c6b-b5fe-7a9ba4c5950f")
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 86.36 185.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0b458549-0848-4d8d-bc6f-4ae948f0c9b1")
-		(property "Reference" "#FLG02"
-			(at 86.36 183.515 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 86.36 192.786 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 86.36 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "91340e16-54fe-402d-8335-35f424e39936")
-		)
-		(instances
-			(project "cpNode-IOX"
-				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
-					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Regulator_Linear:LM78M05_TO252")
 		(at 96.52 175.26 0)
 		(unit 1)
@@ -4258,7 +4183,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2667aafa-0d5f-4075-90d8-195e22017c91")
-		(property "Reference" "R35"
+		(property "Reference" "R1"
 			(at 126.238 179.832 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4344,7 +4269,7 @@
 		(instances
 			(project "cpNode-IOX"
 				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
-					(reference "R35")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -4429,83 +4354,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 54.61 175.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "391747b1-9e75-4aff-8394-4c641cf3d245")
-		(property "Reference" "#FLG01"
-			(at 54.61 173.355 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 54.864 169.164 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 54.61 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 54.61 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c864f11c-a530-4bbb-87da-8ea4ab5b1bf8")
-		)
-		(instances
-			(project "cpNode-IOX"
-				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SPCoast:R")
 		(at 140.97 171.45 180)
 		(unit 1)
@@ -4516,7 +4364,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "44641892-ada2-4a6a-be3b-2dc3263e292a")
-		(property "Reference" "R36"
+		(property "Reference" "R2"
 			(at 139.192 173.228 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4602,7 +4450,7 @@
 		(instances
 			(project "cpNode-IOX"
 				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
-					(reference "R36")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -4793,7 +4641,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 86.36 175.26 0)
+		(at 86.36 185.42 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4801,9 +4649,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "5262b586-3728-4af5-9db8-d02bf325773b")
+		(uuid "5825f5db-2124-40fd-92e0-4c037247516a")
 		(property "Reference" "#FLG03"
-			(at 86.36 173.355 0)
+			(at 86.36 187.325 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4814,7 +4662,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 86.614 171.45 0)
+			(at 87.122 192.532 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4824,7 +4672,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 175.26 0)
+			(at 86.36 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4835,7 +4683,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 175.26 0)
+			(at 86.36 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4846,7 +4694,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 86.36 175.26 0)
+			(at 86.36 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4857,7 +4705,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "49995ffe-1d63-4577-8b96-3e9629b8e480")
+			(uuid "316de405-e16d-4066-bb58-6e67b81c34aa")
 		)
 		(instances
 			(project "cpNode-IOX"
@@ -5172,7 +5020,7 @@
 			(uuid "618da7b3-cbdb-4413-8318-8ea8b4ab1f7a")
 		)
 		(pin "9"
-			(uuid "91bf0965-6c6b-4702-ac13-814d40c3479e")
+			(uuid "c07f4e81-9650-4c23-bd6e-aecc6e4f50ce")
 		)
 		(instances
 			(project "cpNode-IOX"
@@ -5753,6 +5601,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 54.61 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aba762ae-f28e-43c4-8f33-b2952d00cc62")
+		(property "Reference" "#FLG01"
+			(at 54.61 173.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 54.61 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 54.61 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7ac27e41-c4d3-4ff3-ac8c-3890a77e28bb")
+		)
+		(instances
+			(project "cpNode-IOX"
+				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SPCoast:Conn_01x04")
 		(at 38.1 184.15 0)
 		(mirror x)
@@ -6248,6 +6174,132 @@
 					(unit 1)
 				)
 			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 74.93 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff92985d-e1b2-4226-acc4-6dfcd68ac38a")
+		(property "Reference" "#FLG02"
+			(at 74.93 173.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 74.93 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 74.93 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "64ef90b1-0fb7-4468-b706-267370584590")
+		)
+		(instances
+			(project "cpNode-IOX"
+				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(group "Power Supply"
+		(uuid "d4c28618-5366-4d13-8ed2-ac0ce96d55a1")
+		(lib_id "SPCoast:Power Supply")
+		(members "02ecea2d-9b62-439c-b78d-78432e5d535c" "0355d5c5-61e7-4ffd-9cef-5d6b31021bbb"
+			"03f0ba17-d696-4397-8790-cd2128b60183" "088bbb74-85c6-478e-9955-874dd6b5abe1"
+			"09f01a62-5ca5-435d-a057-5e857fe43635" "0bcadad7-ab57-48ae-945e-8b117f5e0837"
+			"17cda226-cd3a-4f84-82ea-439ada1ac6ad" "17dcb336-ea43-4919-920b-028f3518c400"
+			"1adae7e9-4956-483b-883c-505ca6b3a715" "1da97b00-82ee-47e8-95ed-2dfe13c30a3b"
+			"1e88f532-ffb2-46ad-9857-c5641ea70c90" "22944bd8-f560-4949-8553-f06118e8fe74"
+			"2667aafa-0d5f-4075-90d8-195e22017c91" "27266bca-3abe-460a-b515-22623fb8c885"
+			"282931b4-1ab2-4b51-870d-3c6c3025a5d5" "296a3f6f-1594-4b74-a8b2-f9f2d36b5da6"
+			"326fba65-6d71-4acf-b5b2-8973eaf0c5bd" "35ab918a-4280-4a8d-9d30-13f8bf3e5537"
+			"35c6d470-6864-4e2a-ad6a-066fd3bd0b1b" "3d531d97-b753-430c-a602-391ca5d99e67"
+			"44641892-ada2-4a6a-be3b-2dc3263e292a" "4af02d6e-bdcc-44ab-8d73-7025125133c0"
+			"4ea1b2f4-6e46-4d5e-a4bd-ca5ff9b3ad20" "502a23be-8232-447e-819f-1fa583eb8ad5"
+			"50a5320e-b93d-4377-b851-eb3dd289b8e8" "510126a1-adfe-4393-b519-bccf8c3a21e5"
+			"549c2b07-43d6-4536-a207-caf27adc67d2" "56230761-7b8a-4fb3-952b-7036e0d60cff"
+			"58139ab5-5977-4f07-9917-0de4e2a5d53c" "58cd9d9b-4e4d-4873-ae4b-e52d342e8dcb"
+			"5b60e099-5ffd-483b-b011-f43cab22911c" "61019b7e-0aaf-4b0b-a5c9-f6ab04208a7a"
+			"61c228a8-a166-4c8b-86b6-c85f6a6eb660" "6231b23f-fa97-460e-8d33-bc892f2d8c92"
+			"64812ecb-c027-4fd4-9c4d-a6225155c242" "65d10d69-6d05-41eb-ada4-222fcf282063"
+			"661651d0-28af-44ec-a37c-e82ac365d55f" "69270ba3-f1c9-4eab-8e74-6fc477a007cd"
+			"6b00f88b-8660-4e33-a3db-6af44d9a164e" "6b957d1d-00f0-4a72-9968-9fda11d9764b"
+			"6d0d88e0-4985-4a21-ab93-cffb158428a7" "70d390a4-2e91-4d66-a7a8-b70abd4efc60"
+			"7158dece-cf26-4962-ac68-bff4c3395cf2" "79871b93-c211-4d2a-863e-08f6712749c0"
+			"7bea8298-3e74-4c7c-b018-cae42577d027" "80303b3f-cb32-4944-9536-d54442fc17f8"
+			"8339c9b7-0526-4faa-9e7a-3ff306b16dd3" "88799f9d-4ac0-4136-9c79-0dd9a49f9612"
+			"8b6d3a61-dddf-42a1-8d85-4e71b64a5ae5" "8d973c7f-093f-43ac-9121-3dcc788969b4"
+			"900d285c-1a2c-4dcc-9fe1-b8c8002f4243" "91a44f12-8d72-4ac1-962d-39dd5f238f28"
+			"922f13ae-40a0-46d7-a829-12ba4324de39" "92b9f320-9ac4-4888-9834-a5c0eba91b5c"
+			"967f92f8-fbb3-4003-aa3f-61e6c2bf76df" "a391bffb-c7c0-4dad-99e8-1eb8fd5d090e"
+			"a639050e-6cc2-4c4c-90f6-132f751d1a74" "a65d05d5-fe77-49e8-87ed-63cac583bd45"
+			"a9138b5b-0601-4d19-b542-89ac47f6f506" "ac5b8104-4ce7-46aa-838c-6be2f1e295f8"
+			"b000af40-a7d3-4c0a-a00e-22ed8e9dc12a" "b0d4c479-6b6f-462a-a492-a24c694f210c"
+			"b2864d2f-82f8-4fbe-bf63-70a8f76e5127" "b2f01afe-064a-468a-ac40-07b19a536898"
+			"b78ae46a-3bb8-4798-8ba9-5dda3d7c326b" "b9103e65-287f-4a9f-9e81-0abfdd0139d8"
+			"bf46c898-8af9-43b3-9b66-cdb1578eb9c7" "c5a2ac02-7110-44a8-be92-367938176e52"
+			"c76622d1-539f-47b1-8f3d-99f599e5a7b8" "cc2a4209-069e-4a28-bfaf-e55579299fe6"
+			"ccb8c848-97c6-4824-a646-84c61ab289cf" "d5924dd2-aa33-411a-ad10-3d12ac18cc8b"
+			"d7d98b38-3afc-4c40-b2a6-ce6e1a635648" "d84cce81-ebe8-447e-9585-02494a7eb06c"
+			"d8f1d5b4-86a0-4421-8f9b-3ad6e9159030" "dcd1e221-23fd-42a1-8864-cae164b16a93"
+			"de75fc80-b3e5-4dc2-9656-fb67614815f2" "e090bcdb-cf67-40c4-9214-6370a4a39d62"
+			"e7a2b134-8985-49a5-a384-e3243b511725" "ef70a2e8-b2e5-4e6a-add5-b6c87fa4b258"
+			"f2f61d85-313a-4a92-b057-48a198bc6285" "f3312b5d-892f-4241-bcf2-a7650b4ba676"
+			"f363dd02-7381-4889-8935-baab4be6e978" "f86e6b9c-2276-4055-bdf2-e516ce7af139"
+			"fa216c55-854c-4c6b-b5fe-7a9ba4c5950f" "faafcc89-227c-48b0-a527-c15d8d0a1d58"
 		)
 	)
 	(sheet_instances
