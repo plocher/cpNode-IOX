@@ -1,0 +1,90 @@
+ERC report (2026-07-21T21:03:47, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'SPCoast'
+    ; warning
+    @(1500 mils, 2400 mils): Symbol J3 [Conn_01x02]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'SPCoast'
+    ; warning
+    @(1900 mils, 2400 mils): Symbol J7 [Conn_01x02]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'SPCoast'
+    ; warning
+    @(3550 mils, 2100 mils): Symbol J10 [Conn_01x02]
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(4000 mils, 2250 mils): Symbol SJ1 [SolderJumper_2_Bridged]
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(4100 mils, 2250 mils): Symbol SJ2 [SolderJumper_2_Bridged]
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(4200 mils, 2250 mils): Symbol SJ3 [SolderJumper_2_Bridged]
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(4300 mils, 2250 mils): Symbol SJ4 [SolderJumper_2_Bridged]
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(4400 mils, 2250 mils): Symbol SJ5 [SolderJumper_2_Bridged]
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(4500 mils, 2250 mils): Symbol SJ6 [SolderJumper_2_Bridged]
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(4600 mils, 2250 mils): Symbol SJ7 [SolderJumper_2_Bridged]
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(4700 mils, 2250 mils): Symbol SJ8 [SolderJumper_2_Bridged]
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(4900 mils, 2250 mils): Symbol SJ9 [SolderJumper_2_Bridged]
+[same_local_global_label]: Local and global labels have same name
+    ; warning
+    @(1100 mils, 5300 mils): Global Label 'SCL'
+    @(4100 mils, 4000 mils): Label 'SCL'
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(5000 mils, 2250 mils): Symbol SJ10 [SolderJumper_2_Bridged]
+[same_local_global_label]: Local and global labels have same name
+    ; warning
+    @(1100 mils, 5400 mils): Global Label 'SDA'
+    @(4000 mils, 4000 mils): Label 'SDA'
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(5100 mils, 2250 mils): Symbol SJ11 [SolderJumper_2_Bridged]
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(5200 mils, 2250 mils): Symbol SJ12 [SolderJumper_2_Bridged]
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(5300 mils, 2250 mils): Symbol SJ13 [SolderJumper_2_Bridged]
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(5400 mils, 2250 mils): Symbol SJ14 [SolderJumper_2_Bridged]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'SPCoast'
+    ; warning
+    @(2450 mils, 5400 mils): Symbol J8 [Conn_01x02]
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(5500 mils, 2250 mils): Symbol SJ15 [SolderJumper_2_Bridged]
+[lib_symbol_mismatch]: Symbol 'SolderJumper_2_Bridged' doesn't match copy in library 'Jumper'
+    ; warning
+    @(5600 mils, 2250 mils): Symbol SJ16 [SolderJumper_2_Bridged]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'SPCoast'
+    ; warning
+    @(3000 mils, 5400 mils): Symbol J9 [Conn_01x02]
+[lib_symbol_mismatch]: Symbol 'Conn_01x02' doesn't match copy in library 'SPCoast'
+    ; warning
+    @(6050 mils, 2100 mils): Symbol J19 [Conn_01x02]
+[multiple_net_names]: Both V_{I2C} and +5V are attached to the same items; V_{I2C} will be used in the netlist
+    ; warning
+    @(1100 mils, 4900 mils): Global Label 'V_{I2C}'
+    @(7150 mils, 4600 mils): Symbol #PWR011 Pin 1 [Power input, Line]
+
+ ** ERC messages: 25  Errors 0  Warnings 25
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters
