@@ -53,8 +53,27 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|162415573|123705000|0f4094ea-fdb1-400c-881b-4ecfa905fceb|34aa52f3-59ae-4dc1-ba92-48c55f20ed10",
+          "Requires a cutout on Tyco Mounting Track"
+        ],
+        [
+          "pth_inside_courtyard|158115000|123140000|7f354859-ef1f-48f9-880b-1b4833cf862b|0f4094ea-fdb1-400c-881b-4ecfa905fceb",
+          "Requires a cutout on Tyco Mounting Track"
+        ],
+        [
+          "pth_inside_courtyard|162815000|120140000|be8b252e-1d7b-42aa-a338-1e7af3182fbf|0f4094ea-fdb1-400c-881b-4ecfa905fceb",
+          "Requires a cutout on Tyco Mounting Track"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -187,7 +206,18 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.0,
+        0.1524,
+        0.2032,
+        0.254,
+        0.3048,
+        0.4064,
+        0.6096,
+        1.2192,
+        1.6256
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -214,7 +244,28 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.6
+        },
+        {
+          "diameter": 1.2,
+          "drill": 0.7
+        },
+        {
+          "diameter": 1.6,
+          "drill": 0.9
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -224,7 +275,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "3.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -500,7 +551,9 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
+    "net_colors": {
+      "+5V": "rgb(255, 153, 0)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": []
   },
@@ -512,7 +565,7 @@
       "specctra_dsn": "",
       "vrml": ""
     },
-    "page_layout_descr_file": "kicad-embed://SPCoast.kicad_wks"
+    "page_layout_descr_file": "/Users/jplocher/Dropbox/KiCad/SPCoast_KiCad_Library/resources/SPCoast.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -722,7 +775,7 @@
     "meta": {
       "version": 1
     },
-    "page_layout_descr_file": "kicad-embed://SPCoast.kicad_wks",
+    "page_layout_descr_file": "/Users/jplocher/Dropbox/KiCad/SPCoast_KiCad_Library/resources/SPCoast.kicad_wks",
     "plot_directory": "",
     "reuse_designators": true,
     "subpart_first_id": 65,
@@ -734,7 +787,7 @@
         "uuid": "39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J13-14,J17-18",
     "variants": []
   },
   "sheets": [

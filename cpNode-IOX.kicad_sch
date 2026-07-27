@@ -7,9 +7,10 @@
 	(title_block
 		(title "cpNode-IOX")
 		(date "2026.07")
+		(rev "3.0")
 		(company "SPCoast")
 		(comment 1 "John Plocher")
-		(comment 2 "23017 IO Expander for cpNode")
+		(comment 2 "23017 based I2C expander for cpNode")
 		(comment 9 "experimental")
 	)
 	(lib_symbols
@@ -1677,124 +1678,6 @@
 						(effects
 							(font
 								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "SPCoast-eagle:+5V"
-			(power global)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#P+"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at -2.54 -5.08 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.778 1.5113)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "SUPPLY SYMBOL"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+5V_1_0"
-				(polyline
-					(pts
-						(xy 0 0) (xy -1.27 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.905) (xy 0 0)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin power_in line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "+5V"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
 							)
 						)
 					)
@@ -7265,6 +7148,18 @@
 		(uuid "80303b3f-cb32-4944-9536-d54442fc17f8")
 	)
 	(junction
+		(at 127 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "008e3bf1-753f-4fb8-9ead-a3b3d6766654")
+	)
+	(junction
+		(at 106.68 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01f3c020-be1e-4b48-8295-d056b2a42236")
+	)
+	(junction
 		(at 33.02 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7275,12 +7170,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "088bbb74-85c6-478e-9955-874dd6b5abe1")
-	)
-	(junction
-		(at 124.46 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "08b3ef73-1d4e-42f4-9e40-c04ea62dac39")
 	)
 	(junction
 		(at 40.64 135.89)
@@ -7295,16 +7184,16 @@
 		(uuid "0bba0c84-cb05-4b50-a3a3-8bc555f96b59")
 	)
 	(junction
-		(at 111.76 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1155cef3-ea4d-4f70-be1c-58241d16702e")
-	)
-	(junction
 		(at 21.59 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "166b49e4-f1ab-42d9-a374-092f0abb716e")
+	)
+	(junction
+		(at 104.14 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e658819-627f-43ab-b636-4362a5d42c24")
 	)
 	(junction
 		(at 140.97 186.69)
@@ -7313,16 +7202,22 @@
 		(uuid "22944bd8-f560-4949-8553-f06118e8fe74")
 	)
 	(junction
-		(at 104.14 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "23b22e49-e79c-4be5-b467-9c33f49343a4")
-	)
-	(junction
 		(at 33.02 179.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "27266bca-3abe-460a-b515-22623fb8c885")
+	)
+	(junction
+		(at 116.84 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27ee71e9-2ee9-4b93-a687-c33ca281ac0e")
+	)
+	(junction
+		(at 104.14 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28537fdb-0133-455b-b239-ac9c9ce5c120")
 	)
 	(junction
 		(at 86.36 185.42)
@@ -7331,10 +7226,22 @@
 		(uuid "326fba65-6d71-4acf-b5b2-8973eaf0c5bd")
 	)
 	(junction
-		(at 106.68 66.04)
+		(at 109.22 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3ccdee2e-3ebe-4aee-add3-32722c9062ec")
+		(uuid "3bbfbc32-c85c-4ef6-ab22-eb23fd04feb0")
+	)
+	(junction
+		(at 142.24 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44f793bb-f111-4fd0-af9b-d34c94b89162")
+	)
+	(junction
+		(at 119.38 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "458f36db-3c84-41f2-9c2e-295aa8922bb8")
 	)
 	(junction
 		(at 86.36 175.26)
@@ -7349,10 +7256,10 @@
 		(uuid "51cf0854-b4f4-41cf-bf83-58555fdada62")
 	)
 	(junction
-		(at 116.84 66.04)
+		(at 119.38 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "551fa05d-3af4-48e4-b1ac-56b4499f9f43")
+		(uuid "5d504854-1138-4012-b5a7-5b67cce8d6a0")
 	)
 	(junction
 		(at 54.61 180.34)
@@ -7365,6 +7272,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "63298e21-edd4-4380-a382-9ac814569966")
+	)
+	(junction
+		(at 127 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64c61e38-14c6-44eb-9fef-a5d800c8e082")
 	)
 	(junction
 		(at 33.02 180.34)
@@ -7385,22 +7298,28 @@
 		(uuid "6cebaa1f-25ba-4f8e-8bb7-af94efd162f6")
 	)
 	(junction
-		(at 114.3 66.04)
+		(at 139.7 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6f3a84e6-1b4f-4623-acea-256809a034a0")
+		(uuid "70d5c5e4-523a-4a62-bbaa-12418252c0e4")
 	)
 	(junction
 		(at 129.54 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "73d35ddb-bfef-4d46-99e8-106853a1423f")
+		(uuid "77195890-17be-44aa-aa55-09aa3374bee4")
 	)
 	(junction
-		(at 134.62 48.26)
+		(at 101.6 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "74042d4b-ac0e-457a-9924-457fc81c01a9")
+		(uuid "7ba49d45-03a1-4b10-be99-ae8bd1fdb635")
+	)
+	(junction
+		(at 137.16 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d54de91-d4d2-40fc-9fd9-406214cdb541")
 	)
 	(junction
 		(at 40.64 138.43)
@@ -7409,28 +7328,40 @@
 		(uuid "81565fb5-9d18-46cc-bc6e-6995d80db7e9")
 	)
 	(junction
-		(at 139.7 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "81862aaf-a12e-4b1d-9df2-5877d55058ca")
-	)
-	(junction
-		(at 101.6 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8265020c-b362-429a-98ed-815eec140c94")
-	)
-	(junction
 		(at 41.91 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "83f2241b-f2ae-43cf-a517-d7cfe275e3ba")
 	)
 	(junction
+		(at 129.54 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85fed025-c50d-4085-8383-16de4331164f")
+	)
+	(junction
+		(at 137.16 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8622a52c-db0c-4263-af8b-24b2b7686712")
+	)
+	(junction
 		(at 30.48 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8639a669-3f22-406f-a11d-4d5307ab906d")
+	)
+	(junction
+		(at 124.46 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8749f0aa-16dd-4967-bcd3-7bf26773b112")
+	)
+	(junction
+		(at 134.62 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87e77c75-8b8a-40d1-86df-672c3eeb59c2")
 	)
 	(junction
 		(at 33.02 184.15)
@@ -7445,28 +7376,22 @@
 		(uuid "8a2a86b5-b3d0-49d0-8064-297d20c02c26")
 	)
 	(junction
-		(at 106.68 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9126bd84-82cb-4412-bb5a-cdd4ea7b6806")
-	)
-	(junction
-		(at 142.24 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "915cbd08-90c1-4b5f-83bf-44d5eba4edd2")
-	)
-	(junction
 		(at 106.68 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "91a44f12-8d72-4ac1-962d-39dd5f238f28")
 	)
 	(junction
-		(at 132.08 66.04)
+		(at 116.84 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "933448ed-326a-4d10-b47e-43d65d39d6ae")
+		(uuid "95635453-b4b4-4022-a81d-1710397ba825")
+	)
+	(junction
+		(at 134.62 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95dba302-e3e2-4176-a58d-09508058de8f")
 	)
 	(junction
 		(at 33.02 176.53)
@@ -7475,10 +7400,34 @@
 		(uuid "967f92f8-fbb3-4003-aa3f-61e6c2bf76df")
 	)
 	(junction
+		(at 139.7 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c0f4215-8709-49f6-a857-8175aa588ad4")
+	)
+	(junction
+		(at 114.3 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a06b0a2d-acdc-4baa-84f9-5c0b88c75e7a")
+	)
+	(junction
 		(at 21.59 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a3288b2a-89cc-4d3c-8d7e-6799a7f3c9c3")
+	)
+	(junction
+		(at 132.08 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a72e86b7-8850-45fc-9853-a5f19d8a9531")
+	)
+	(junction
+		(at 106.68 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a7eb9001-57aa-4da8-aa06-4b7a2cde32fb")
 	)
 	(junction
 		(at 21.59 58.42)
@@ -7491,18 +7440,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a9696f4e-897c-4437-864c-02f309d59c75")
-	)
-	(junction
-		(at 119.38 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ab47a647-e01c-40ce-8e85-aa49f737e30e")
-	)
-	(junction
-		(at 114.3 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b06a4af4-3398-48f5-9b9f-1e0c8b3b4d9e")
 	)
 	(junction
 		(at 140.97 176.53)
@@ -7523,28 +7460,10 @@
 		(uuid "b9103e65-287f-4a9f-9e81-0abfdd0139d8")
 	)
 	(junction
-		(at 139.7 66.04)
+		(at 114.3 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b94aa8a0-8cce-492a-a984-2e43fc5ba1da")
-	)
-	(junction
-		(at 132.08 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b9a53c7f-e1a7-416c-af89-a24df3ee90e9")
-	)
-	(junction
-		(at 109.22 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bb888c4a-f0b4-41f1-bfe0-cc4874f6b59d")
-	)
-	(junction
-		(at 101.6 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bcaa3e7c-0efd-4f39-9b6d-3b66176e0af9")
+		(uuid "b996e22b-7513-4120-bf1a-7ea7c3e94625")
 	)
 	(junction
 		(at 163.83 104.14)
@@ -7559,12 +7478,6 @@
 		(uuid "bf46c898-8af9-43b3-9b66-cdb1578eb9c7")
 	)
 	(junction
-		(at 127 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c2f9a485-86ba-4012-9b39-ba79a29e6648")
-	)
-	(junction
 		(at 21.59 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7577,16 +7490,22 @@
 		(uuid "c426d9cb-93d6-419c-afa3-eaa30497cfeb")
 	)
 	(junction
-		(at 129.54 48.26)
+		(at 132.08 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cb925179-ad96-4399-87fe-955717025d3c")
+		(uuid "c4b26a90-6684-425e-bce6-0a68f5e43427")
 	)
 	(junction
-		(at 109.22 48.26)
+		(at 101.6 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cc2b8c8a-1be6-46ea-95fe-ce149d9ae92f")
+		(uuid "ca31e0a1-c916-4c1d-ad64-71c12528521e")
+	)
+	(junction
+		(at 111.76 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce98817b-3896-40f4-a721-935a4f2bddbe")
 	)
 	(junction
 		(at 161.29 105.41)
@@ -7601,28 +7520,10 @@
 		(uuid "d3d9df2f-ca2f-4450-8df3-62bdace9b4ac")
 	)
 	(junction
-		(at 137.16 48.26)
+		(at 109.22 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d69a0dfe-c8e9-4bec-ba93-367b1a58d0f7")
-	)
-	(junction
-		(at 142.24 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dbef9532-d0a2-4df6-a72b-393603e6a4a3")
-	)
-	(junction
-		(at 116.84 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc3c02f0-cfc4-42ce-8a16-f2406149bc6a")
-	)
-	(junction
-		(at 137.16 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e24bdc18-7945-4033-928c-63896e341fed")
+		(uuid "d887fe01-a6d6-49a0-bfca-18ffe21092af")
 	)
 	(junction
 		(at 158.75 106.68)
@@ -7637,34 +7538,16 @@
 		(uuid "e5c838cb-f91b-4e2e-adb6-18449d609df8")
 	)
 	(junction
-		(at 111.76 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e87f39c0-a920-41b3-a751-7c751a86b450")
-	)
-	(junction
-		(at 127 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed41258d-88fa-4aa9-a5fd-ae6fa0cddf98")
-	)
-	(junction
 		(at 124.46 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ede65d5e-6a95-49fd-a929-a98d6a910b99")
+		(uuid "ec29d7b2-5f3d-4a58-afe9-83fbe776decc")
 	)
 	(junction
-		(at 119.38 66.04)
+		(at 142.24 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ef3525a4-d837-4bd4-a867-e54c4b7a6359")
-	)
-	(junction
-		(at 134.62 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f06d4bd2-2fb3-4acc-8559-3a38e4e981ed")
+		(uuid "efb0bb1d-c5ac-40fc-a101-81c84436ecee")
 	)
 	(junction
 		(at 74.93 175.26)
@@ -7679,6 +7562,12 @@
 		(uuid "f3312b5d-892f-4241-bcf2-a7650b4ba676")
 	)
 	(junction
+		(at 111.76 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6995b26-87dd-4ec7-822f-2a489ae340a7")
+	)
+	(junction
 		(at 161.29 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7689,12 +7578,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fbdc7026-9f6d-4411-a438-5932cc73c203")
-	)
-	(junction
-		(at 104.14 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fc205651-6e45-40b6-aa00-fd820c75e0fc")
 	)
 	(junction
 		(at 161.29 91.44)
@@ -9386,26 +9269,6 @@
 		)
 		(uuid "17d6de28-cc2b-4c5e-8f6e-91e8f9b9bb64")
 	)
-	(label "GPA7"
-		(at 124.46 66.04 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1be0975d-166c-40ae-a1cd-8c5159758d9c")
-	)
-	(label "GPA6"
-		(at 127 66.04 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "394d9cb0-4541-4b2d-a22d-25c7df503507")
-	)
 	(label "A2"
 		(at 158.75 110.49 90)
 		(effects
@@ -9416,56 +9279,6 @@
 		)
 		(uuid "3cb9de3b-592f-40f8-9790-d32472608b44")
 	)
-	(label "GPA4"
-		(at 132.08 66.04 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "58784c43-3f98-45de-a790-68c7e69ac581")
-	)
-	(label "GPA0"
-		(at 142.24 66.04 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "695921e6-6792-44b2-b59e-52ac40469ebc")
-	)
-	(label "GPA2"
-		(at 137.16 66.04 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "96fd80f0-0549-4e63-a197-b90c095fa67b")
-	)
-	(label "GPA5"
-		(at 129.54 66.04 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c4548c84-a8ae-4fd0-b31e-d80ec5c2c23c")
-	)
-	(label "GPA3"
-		(at 134.62 66.04 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cf16f2a1-c86b-473c-8a03-a13e4417c316")
-	)
 	(label "A1"
 		(at 161.29 110.49 90)
 		(effects
@@ -9475,16 +9288,6 @@
 			(justify left bottom)
 		)
 		(uuid "d5569bb2-bf8e-437c-a592-bd75e0e8d892")
-	)
-	(label "GPA1"
-		(at 139.7 66.04 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fad4fdf8-c520-4b03-8a16-ea69e87448bf")
 	)
 	(global_label "+5V"
 		(shape bidirectional)
@@ -9944,7 +9747,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "0d978898-06b5-4cb0-ae5b-1eec49b47f1e")
 		(property "Reference" "SJ16"
@@ -10014,6 +9817,84 @@
 			(project "cpNode-IOX"
 				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
 					(reference "SJ16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 153.67 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1387a08c-c2fd-4442-9804-fa3110152ba6")
+		(property "Reference" "#PWR013"
+			(at 153.67 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 153.67 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 153.67 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "972215c7-fdfd-405a-8934-627ada78a21f")
+		)
+		(instances
+			(project "cpNode-IOX"
+				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -10130,7 +10011,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SPCoast:Board_068x80"
+		(property "Footprint" "SPCoast:Board_068x110"
 			(at 256.794 169.418 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10425,7 +10306,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "1ce04842-27b7-474f-bf14-e2c9cbc3c815")
 		(property "Reference" "SJ2"
@@ -10608,7 +10489,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "2373f4e7-739a-4162-9da2-c6ca3c611df9")
 		(property "Reference" "SJ15"
@@ -10678,91 +10559,6 @@
 			(project "cpNode-IOX"
 				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
 					(reference "SJ15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SPCoast-eagle:+5V")
-		(at 90.17 46.99 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "245c4e65-4786-4db3-8250-c87dce5db801")
-		(property "Reference" "#P+01"
-			(at 90.17 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 87.63 52.07 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 90.17 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 90.17 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "SUPPLY SYMBOL"
-			(at 90.17 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "715773fb-4e1e-42d0-9929-e4ed0ee06026")
-		)
-		(instances
-			(project "cpNode-IOX"
-				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
-					(reference "#P+01")
-					(unit 1)
-				)
-			)
-			(project "IOX_Plugin_Footprint"
-				(path "/9c32e807-5296-47e8-82e5-057c5bd52863"
-					(reference "#P+01")
 					(unit 1)
 				)
 			)
@@ -11429,215 +11225,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SPCoast:Conn_01x08")
-		(at 134.62 53.34 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "302e5e67-3676-426e-b5ab-608bb942fff9")
-		(property "Reference" "J17"
-			(at 144.78 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x08"
-			(at 121.92 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
-			(at 134.62 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 134.874 51.816 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 147.32 51.308 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "6962c170-7a9b-4ba1-a03f-c6c50702dbaf")
-		)
-		(pin "5"
-			(uuid "0473f9d6-8136-4ce7-92b0-c20a55ee0b5f")
-		)
-		(pin "4"
-			(uuid "2cf5a7aa-8b00-4fbb-bb5b-88cf40bf3e0e")
-		)
-		(pin "6"
-			(uuid "8bc1df50-8c18-4fde-b41d-672e29528da2")
-		)
-		(pin "7"
-			(uuid "1b4e3b0b-ac47-4546-841c-a49d2327941f")
-		)
-		(pin "8"
-			(uuid "1e566ca3-01ca-423a-a42c-9deda188aef1")
-		)
-		(pin "1"
-			(uuid "be12027b-d92c-47f8-a622-0442738d3904")
-		)
-		(pin "2"
-			(uuid "50344b22-dcc1-438d-8ea1-e4b6cbc4d8d0")
-		)
-		(instances
-			(project "cpNode-IOX"
-				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
-					(reference "J17")
-					(unit 1)
-				)
-			)
-			(project "IOX_Plugin_Footprint"
-				(path "/9c32e807-5296-47e8-82e5-057c5bd52863"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SPCoast:Conn_01x08")
-		(at 111.76 60.96 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "32a44be5-0e67-4c68-aa71-bef054abd32e")
-		(property "Reference" "J14"
-			(at 121.92 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x08"
-			(at 99.06 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
-			(at 111.76 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 112.014 62.484 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 124.46 62.992 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "9e2fe042-aad2-48d6-bd75-93feb73ff6b0")
-		)
-		(pin "5"
-			(uuid "44ec49b0-5de2-4a78-8722-29d3c028a479")
-		)
-		(pin "4"
-			(uuid "c96f02a1-040f-4f61-94ce-09c4d435cc61")
-		)
-		(pin "6"
-			(uuid "0fa0b20b-d041-4514-8289-e25a55229e45")
-		)
-		(pin "7"
-			(uuid "1669893b-6fc0-4944-bc08-bed0c6d9f088")
-		)
-		(pin "8"
-			(uuid "8790a9a6-c6da-42bb-9e4c-891fe72bc855")
-		)
-		(pin "1"
-			(uuid "70681a19-6d71-40df-a0c8-40b3bc82e0e2")
-		)
-		(pin "2"
-			(uuid "cc06454d-5018-4a38-b90c-ecf3fa6b1dc5")
-		)
-		(instances
-			(project "cpNode-IOX"
-				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
-					(reference "J14")
-					(unit 1)
-				)
-			)
-			(project "IOX_Plugin_Footprint"
-				(path "/9c32e807-5296-47e8-82e5-057c5bd52863"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SPCoast:Conn_01x02")
 		(at 90.17 53.34 90)
 		(unit 1)
@@ -11834,7 +11421,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "38af5c06-ae04-45fc-8268-e7072b18143a")
 		(property "Reference" "SJ11"
@@ -13095,9 +12682,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61019b7e-0aaf-4b0b-a5c9-f6ab04208a7a")
@@ -13283,7 +12870,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "676eb8dc-6549-4393-93c7-2dea193fc41f")
 		(property "Reference" "SJ1"
@@ -13366,7 +12953,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "687b8432-e450-4b99-b023-5cf3c9b32fec")
 		(property "Reference" "SJ3"
@@ -13543,6 +13130,104 @@
 		)
 	)
 	(symbol
+		(lib_id "SPCoast:Conn_01x08")
+		(at 132.08 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "692a289a-d6ce-415d-b778-55c727507e95")
+		(property "Reference" "J18"
+			(at 121.92 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x08"
+			(at 144.78 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+			(at 132.08 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 131.826 62.484 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated"
+			(at 119.38 62.992 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "06112aa0-d95a-4bd3-bb1b-e7363c9551dc")
+		)
+		(pin "5"
+			(uuid "b657fa7c-846c-483a-9c6b-b429f0132576")
+		)
+		(pin "4"
+			(uuid "e09596d0-25b4-41bb-8088-892640a4df4b")
+		)
+		(pin "6"
+			(uuid "b7c6b514-d841-4bbc-895f-8e29770ccdc6")
+		)
+		(pin "7"
+			(uuid "39b0a6ba-d5b7-4a86-acad-aa816c0f2989")
+		)
+		(pin "8"
+			(uuid "2e4bdd69-a52e-4b2f-8932-2e13a02168f4")
+		)
+		(pin "1"
+			(uuid "2dbff7b2-5335-453e-aacd-a71720f9ffc7")
+		)
+		(pin "2"
+			(uuid "d410b05e-2772-4bee-87ef-05e0021adf29")
+		)
+		(instances
+			(project "cpNode-IOX"
+				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
+					(reference "J18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SPCoast:C")
 		(at 86.36 180.34 0)
 		(unit 1)
@@ -13686,6 +13371,105 @@
 			(project "cpNode-IOX"
 				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SPCoast:Conn_01x08")
+		(at 109.22 53.34 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6f9bf980-8f56-47d1-a466-ec654c7bf7cd")
+		(property "Reference" "J13"
+			(at 99.06 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x08"
+			(at 121.92 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+			(at 109.22 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 108.966 51.816 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated"
+			(at 96.52 51.308 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "678fabb8-8562-4529-acf4-f6e7b5205a10")
+		)
+		(pin "5"
+			(uuid "ade0764a-1ed5-487c-baba-0f1d6778dda7")
+		)
+		(pin "4"
+			(uuid "96d5a2d1-f2ee-4498-94b0-45e2b1b2c532")
+		)
+		(pin "6"
+			(uuid "1a2c075d-9467-4f0a-baab-bc7a9833468b")
+		)
+		(pin "7"
+			(uuid "837342f8-ee8f-4970-8afe-3a64757e0a62")
+		)
+		(pin "8"
+			(uuid "1d8d783b-8b87-4d66-9e89-43ee80044c98")
+		)
+		(pin "1"
+			(uuid "d850e803-363b-47dd-b0c6-7bff52ba0daa")
+		)
+		(pin "2"
+			(uuid "985575a0-9ec0-4b8b-b1c8-13a9d2e4113a")
+		)
+		(instances
+			(project "cpNode-IOX"
+				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -13855,7 +13639,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "78033780-5c6b-45e7-abf6-4f1667407c25")
 		(property "Reference" "SJ14"
@@ -14534,91 +14318,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SPCoast-eagle:+5V")
-		(at 153.67 46.99 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8fce15a7-0bbf-4da0-adcb-763e4082ee3a")
-		(property "Reference" "#P+02"
-			(at 153.67 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 151.13 52.07 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 153.67 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "SUPPLY SYMBOL"
-			(at 153.67 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "715773fb-4e1e-42d0-9929-e4ed0ee06027")
-		)
-		(instances
-			(project "cpNode-IOX"
-				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
-					(reference "#P+02")
-					(unit 1)
-				)
-			)
-			(project "IOX_Plugin_Footprint"
-				(path "/9c32e807-5296-47e8-82e5-057c5bd52863"
-					(reference "#P+01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SPCoast:Conn_01x04")
 		(at 124.46 43.18 90)
 		(unit 1)
@@ -15034,110 +14733,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SPCoast:Conn_01x08")
-		(at 111.76 53.34 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "aa6d1032-80ac-4d4a-a2a6-97e0a313ed9e")
-		(property "Reference" "J13"
-			(at 121.92 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x08"
-			(at 99.06 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
-			(at 111.76 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 112.014 51.816 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 124.46 51.308 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "6962c170-7a9b-4ba1-a03f-c6c50702dbb0")
-		)
-		(pin "5"
-			(uuid "0473f9d6-8136-4ce7-92b0-c20a55ee0b60")
-		)
-		(pin "4"
-			(uuid "2cf5a7aa-8b00-4fbb-bb5b-88cf40bf3e0f")
-		)
-		(pin "6"
-			(uuid "8bc1df50-8c18-4fde-b41d-672e29528da3")
-		)
-		(pin "7"
-			(uuid "1b4e3b0b-ac47-4546-841c-a49d23279420")
-		)
-		(pin "8"
-			(uuid "1e566ca3-01ca-423a-a42c-9deda188aef2")
-		)
-		(pin "1"
-			(uuid "be12027b-d92c-47f8-a622-0442738d3905")
-		)
-		(pin "2"
-			(uuid "50344b22-dcc1-438d-8ea1-e4b6cbc4d8d1")
-		)
-		(instances
-			(project "cpNode-IOX"
-				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
-					(reference "J13")
-					(unit 1)
-				)
-			)
-			(project "IOX_Plugin_Footprint"
-				(path "/9c32e807-5296-47e8-82e5-057c5bd52863"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 161.29 128.27 0)
 		(unit 1)
@@ -15301,7 +14896,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "ac55a378-29b9-4ef5-b6f7-a616dfc865e5")
 		(property "Reference" "SJ12"
@@ -15384,7 +14979,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "b26504ba-d963-4357-9622-a02ebdbffb1c")
 		(property "Reference" "SJ13"
@@ -15467,7 +15062,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "b93a6eb4-63cd-4764-9850-85f68a000c1d")
 		(property "Reference" "SJ6"
@@ -15638,6 +15233,105 @@
 			(project "cpNode-IOX"
 				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SPCoast:Conn_01x08")
+		(at 132.08 53.34 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bf47d611-5ecd-43df-b6c6-09dc7c48ad31")
+		(property "Reference" "J17"
+			(at 121.92 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x08"
+			(at 144.78 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+			(at 132.08 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 131.826 51.816 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated"
+			(at 119.38 51.308 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "4f870ee4-a934-4e78-bef8-79450814b398")
+		)
+		(pin "5"
+			(uuid "5b8433c7-c341-4b6d-9c26-13299aa42c06")
+		)
+		(pin "4"
+			(uuid "31ab1bf7-be9c-4c3a-85b5-67995c4eaf33")
+		)
+		(pin "6"
+			(uuid "72f56ed6-1c11-43db-8866-352a0ec720ac")
+		)
+		(pin "7"
+			(uuid "722722c7-a336-4dae-b4bb-0985ed5be0fa")
+		)
+		(pin "8"
+			(uuid "713251ac-6a40-4071-8ed1-e8343a6c381e")
+		)
+		(pin "1"
+			(uuid "fdca69ec-df9c-4b93-9084-a49dc009f076")
+		)
+		(pin "2"
+			(uuid "a1164d4f-d9db-4f98-a284-9f5a8658ab4e")
+		)
+		(instances
+			(project "cpNode-IOX"
+				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
+					(reference "J17")
 					(unit 1)
 				)
 			)
@@ -15915,6 +15609,104 @@
 			(project "cpNode-IOX"
 				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
 					(reference "#V04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SPCoast:Conn_01x08")
+		(at 109.22 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ca70dd7f-9dee-4340-a6fd-180a8f396a99")
+		(property "Reference" "J14"
+			(at 99.06 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x08"
+			(at 121.92 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+			(at 109.22 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 108.966 62.484 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated"
+			(at 96.52 62.992 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "c41b8d80-560b-48a9-b9e7-21acbe957d29")
+		)
+		(pin "5"
+			(uuid "e4af8783-a4b1-4549-9329-5da4fbec9ace")
+		)
+		(pin "4"
+			(uuid "bdcc0b6c-ae17-4378-afe2-eaaab8b1b1e9")
+		)
+		(pin "6"
+			(uuid "76fb7f7c-6f2f-4e92-aac3-b3c667e594f1")
+		)
+		(pin "7"
+			(uuid "23aa5ccc-d6b5-4d86-ac8d-f2705cc44d87")
+		)
+		(pin "8"
+			(uuid "3e307a09-d553-440a-a71e-88aeca87a551")
+		)
+		(pin "1"
+			(uuid "6828ce0e-b9e0-429b-af4d-01b0b60bc40b")
+		)
+		(pin "2"
+			(uuid "d925c9e6-89bb-4513-9d49-240b03a28d71")
+		)
+		(instances
+			(project "cpNode-IOX"
+				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -16227,111 +16019,6 @@
 			(project "cpNode-IOX"
 				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
 					(reference "J_{I2C-OUT}1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SPCoast:Conn_01x08")
-		(at 134.62 60.96 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d41c5e02-c1d0-4af4-b26a-2d78c19b6184")
-		(property "Reference" "J18"
-			(at 144.78 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x08"
-			(at 121.92 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
-			(at 134.62 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 134.874 62.484 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 147.32 62.992 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "9e2fe042-aad2-48d6-bd75-93feb73ff6b1")
-		)
-		(pin "5"
-			(uuid "44ec49b0-5de2-4a78-8722-29d3c028a47a")
-		)
-		(pin "4"
-			(uuid "c96f02a1-040f-4f61-94ce-09c4d435cc62")
-		)
-		(pin "6"
-			(uuid "0fa0b20b-d041-4514-8289-e25a55229e46")
-		)
-		(pin "7"
-			(uuid "1669893b-6fc0-4944-bc08-bed0c6d9f089")
-		)
-		(pin "8"
-			(uuid "8790a9a6-c6da-42bb-9e4c-891fe72bc856")
-		)
-		(pin "1"
-			(uuid "70681a19-6d71-40df-a0c8-40b3bc82e0e3")
-		)
-		(pin "2"
-			(uuid "cc06454d-5018-4a38-b90c-ecf3fa6b1dc6")
-		)
-		(instances
-			(project "cpNode-IOX"
-				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
-					(reference "J18")
-					(unit 1)
-				)
-			)
-			(project "IOX_Plugin_Footprint"
-				(path "/9c32e807-5296-47e8-82e5-057c5bd52863"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -17090,6 +16777,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 90.17 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd6430dd-dc6d-44d5-8858-ba4ae6ec451c")
+		(property "Reference" "#PWR04"
+			(at 90.17 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 90.17 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 90.17 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "761dd542-b48a-4138-817b-4c238da43d1f")
+		)
+		(instances
+			(project "cpNode-IOX"
+				(path "/39ce5b62-53a6-4dcf-bd5e-27d0c0125bff"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+VDC")
 		(at 31.75 173.99 0)
 		(unit 1)
@@ -17174,7 +16939,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "e1e29fb6-320b-4811-872e-fff645fe4744")
 		(property "Reference" "SJ5"
@@ -17358,7 +17123,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "e911e714-0813-478a-8a1c-0d688bb53a15")
 		(property "Reference" "SJ4"
@@ -17779,7 +17544,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "f14481db-faff-4f7d-8356-a58f68c8f7f8")
 		(property "Reference" "SJ9"
@@ -17950,7 +17715,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "f560bb9e-e45d-4992-a9a1-0bded625a61e")
 		(property "Reference" "SJ10"
@@ -18033,7 +17798,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "f6eccc7a-2a05-4b6d-a438-000dafc29e0e")
 		(property "Reference" "SJ7"
@@ -18303,7 +18068,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "fb532e7a-02fd-463b-9d65-711b4bdb944d")
 		(property "Reference" "SJ8"
@@ -18466,21 +18231,21 @@
 		(file
 			(name "SPCoast.kicad_wks")
 			(type worksheet)
-			(data |KLUv/WC5CYUWALbgZiEA1TZqxSYphKGrCfCpOjcBDIEjqHQ8revQyDZL/y/roQRcAFcAYAD+8cYH
-				PX/wP/5I/JzNzbT2eDfZ+2Re4yIBq5M258Mr8vGKBGzW9tItf+Q/AAAoEvRe0omoMlXGf0PPiGTV
-				Gb+XffTNAEARslqrZantEd8ye2gAoEqPKBN64PUMAl+COpjtqpEs1vT7PlotAPUj1tTGbJeYrGrV
-				P/L/HqMWZptipFEGx/uek56zjxmDLzZtWnlALH7t4t9v53yHIwhnr6v+0T8fDNq2HY5+WU1r7c/e
-				l1XVAVwn/u1sDW+/O6cSKJwCIVf1e5+MNZ2d9CaUbaJNSrcSivjry3KXjRJySpZV7ajzagStEQlX
-				oWyXzEJTcA6TAJtY01oR09CH7LR12iKzWSoVziTohL+3yDmTsv/oYJM0NxSBIgAoQmVdE6uXNWDT
-				2j5Ma2XMeZBWs2n1hZgHW63BIhBP3gyWvmjfXNi01naRDUIaPfKDFYY6qdWGbF6YiDaBSBSHRqdN
-				um1rVLLMmhdEi2wPjnEZ4BW9v32YtG6PLoCDoAFJhJSZkhlJUsgwB2BEhgbJNknLti99RWQit2Mo
-				iMrLWwumUDAHKK7CHJmG+FeQ68qGrvv00BCJPYGuBo2GzAJ7tdU+gRroQxdJo09h2HLcHCvLJSVk
-				m7tu9KUJhJk72Vp/YpxpkGHDNjqotTLXm6VE1CY5BCjWyK1Q4QCn/NGl3iIFHYCrGcxdG3XWnMqD
-				a431JYSwoEcRBADkArMhABbm7whkvOhKWWzJqkWSoRklO4/wNsYN7dGRTNGPYGL8VIbKL4aKsEAv
-				syZ8Xg+TmCKP/2T3VIJyH84d957skgd2WcIpewwgoWWDEt0B6RYjGzFu5EU9w1Wcf6EAuOoZN59z
-				gy7B5EUBa1SnxUfZyQ7dtootNroC9PH1Lq5xNF/WT8AahT28K977oomQjQ9TBQ==|
+			(data |KLUv/WAlCqUWAPZfZCEA1TZqxSYpBF8GE+BTdW4CGAJHUKn3vc64wmSW/n9CwQRZAFQAXwD/eRbx
+				P/ZI/B3OzZP2eDm5EzW/8bBgaTW78+AV+XjDgq1oe+mWP/InAAABEvRezmpSSkNl/Bd0TUhSnfF3
+				2UfnEACBAkYpteqsPeJbZg8RAIHyI9KA3Xc/hDQjVdvT87xJLUDgR7yhbWuXmKQo1T/y995Oy9ae
+				ljTK33i/c9Jz9jHj78OePanPh0OvPfz77Z1vcATh3DXVP7oo4q92bXD0y+pJaX/uvqSodrEbA12t
+				6roEhpMA3Kj+Tsx409nJjlLRKBmldC1giL2+6obRKiGvYBjVD1pdnZhUMtksFQ2jYWSL7WEa2Mr2
+				pDRRHRqBnTQuY2i0i8WymQat8O8YOWdS9h/9a9Lmfgny2NoBgULCuipLr3qoVsadB2U2QeuhJhJP
+				3vyVzmjnXLaqtXISLUIaO1LEiwOtptUZSUaJTBYIB5dROE1zWDAskkk0yNa4je+G3d9GVJNqEG7j
+				wr9cpZWCt9+9Y6mTYpUVgIqgIT2FFKISSZIUMswBYESGxug8QEDtt9liS5c53JQly9zNmA6AZcOv
+				yqJvwWhmAlq1aS5QEQA+zjTyTwGxIivG8qmRkIk4iq4PBq0aArmixZaAE/Sli+TrI2B7j/UDuaUJ
+				cunDGTOnO3ZhciHPQbaVz3qBH2cGeqgQPRDquMyquZYIW1dX6BjmhdGxfOnDh0LmKBMA1hDMXSt1
+				1lwlA2jd+lKEsNxVNAkAutasBcDGnDsEGa+6UipbsnSRyNCskp1XeAvDBnhg1FPqI5gAP5Wh8pMh
+				JVzQy4QJvq+XSUoRxHeSNyWJ6i9nnXhPds2dvZZwzRgBPBBkHh3ZYcLtBtbEOJAW9wyt47QLBcDF
+				Z8ic3A27YBMvCnij9l33iEl/6LZNbN/UeuhD1zu+xsZ8qZ/cNQp7zFf876smYjM+TBU=|
 			)
-			(checksum "59A69FABB2B29EBF33292B3E481E6720")
+			(checksum "149FD1D00CEE082A6D2CEFFF9572FFC4")
 		)
 	)
 )
