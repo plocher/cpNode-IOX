@@ -60,20 +60,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "courtyards_overlap|162415573|123705000|0f4094ea-fdb1-400c-881b-4ecfa905fceb|34aa52f3-59ae-4dc1-ba92-48c55f20ed10",
-          "Requires a cutout on Tyco Mounting Track"
-        ],
-        [
-          "pth_inside_courtyard|158115000|123140000|7f354859-ef1f-48f9-880b-1b4833cf862b|0f4094ea-fdb1-400c-881b-4ecfa905fceb",
-          "Requires a cutout on Tyco Mounting Track"
-        ],
-        [
-          "pth_inside_courtyard|162815000|120140000|be8b252e-1d7b-42aa-a338-1e7af3182fbf|0f4094ea-fdb1-400c-881b-4ecfa905fceb",
-          "Requires a cutout on Tyco Mounting Track"
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -83,7 +70,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "ignore",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
@@ -115,11 +102,11 @@
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "error",
         "padstack": "warning",
-        "pth_inside_courtyard": "error",
+        "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "ignore",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",

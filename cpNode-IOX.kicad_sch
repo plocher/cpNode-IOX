@@ -15735,7 +15735,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74HC4511D,653"
+		(property "Value" "IC_SOIC-16_74HC4511"
 			(at 198.9933 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15769,17 +15769,6 @@
 			)
 		)
 		(property "Description" "BCD to 7-segment latch/decoder/driver"
-			(at 196.85 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C87661"
 			(at 196.85 106.68 0)
 			(hide yes)
 			(show_name no)
